@@ -1,5 +1,5 @@
 # sqlalchemy-challenge
-Before You Begin
+## Before You Begin
 Create a new repository for this project called sqlalchemy-challenge. Do not add this assignment to an existing repository.
 
 Clone the new repository to your computer.
@@ -10,15 +10,15 @@ Add your Jupyter notebook and app.py to this folder. They’ll contain the main 
 
 Push the changes to GitHub or GitLab.
 
-Files
+## Files
 Download the following files to help you get started:
 
 Module 10 Challenge filesLinks to an external site.
 
-Instructions
+## Instructions
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii. To help with your trip planning, you decide to do a climate analysis about the area. The following sections outline the steps that you need to take to accomplish this task.
 
-Part 1: Analyze and Explore the Climate Data
+### Part 1: Analyze and Explore the Climate Data
 In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 
 Note that you’ll use the provided files (climate_starter.ipynb and hawaii.sqlite) to complete your climate analysis and data exploration.
@@ -29,7 +29,7 @@ Use the SQLAlchemy automap_base() function to reflect your tables into classes, 
 
 Link Python to the database by creating a SQLAlchemy session.
 
-IMPORTANT
+## IMPORTANT
 Remember to close your session at the end of your notebook.
 
 Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
@@ -39,7 +39,7 @@ Find the most recent date in the dataset.
 
 Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
 
-HINT
+## HINT
 Select only the "date" and "prcp" values.
 
 Load the query results into a Pandas DataFrame. Explicitly set the column names.
@@ -52,18 +52,18 @@ A screenshot depicts the plot.
 
 Use Pandas to print the summary statistics for the precipitation data.
 
-Station Analysis
+## Station Analysis
 Design a query to calculate the total number of stations in the dataset.
 
 Design a query to find the most-active stations (that is, the stations that have the most rows). To do so, complete the following steps:
 
 List the stations and observation counts in descending order.
 
-HINT
+### HINT
 Answer the following question: which station id has the greatest number of observations?
 Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
 
-HINT
+### HINT
 Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
 
 Filter by the station that has the greatest number of observations.
@@ -76,7 +76,7 @@ A screenshot depicts the histogram.
 
 Close your session.
 
-Part 2: Design Your Climate App
+### Part 2: Design Your Climate App
 Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
 
 /
@@ -108,12 +108,12 @@ For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater 
 
 For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
 
-Hints
+### Hints
 Join the station and measurement tables for some of the queries.
 
 Use the Flask jsonify function to convert your API data to a valid JSON response object.
 
-Requirements
+###\ Requirements
 Jupyter Notebook Database Connection (10 points)
 To receive all points, you must
 Use the SQLAlchemy create_engine() function to connect to your SQLite database (1 point)
@@ -221,21 +221,21 @@ Be well commented with concise, relevant notes that other developers can underst
 Grading
 This assignment will be evaluated against the requirements and assigned a grade according to the following table:
 
-Grade	Points
+## Grade	Points
 A (+/-)	90+
 B (+/-)	80–89
 C (+/-)	70–79
 D (+/-)	60–69
 F (+/-)	< 60
-Submission
+## Submission
 To submit your Challenge assignment, click Submit, and then provide the URL of your GitHub repository for grading.
 
-NOTE
+## NOTE
 You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and move on to the next module.
 
 Comments are disabled for graded submissions in Bootcamp Spot. If you have questions about your feedback, please notify your instructional staff or your Student Success Manager. If you would like to resubmit your work for an additional review, you can use the Resubmit Assignment button to upload new links. You may resubmit up to three times for a total of four submissions.
 
-IMPORTANT
+## IMPORTANT
 It is your responsibility to include a note in the README section of your repo specifying code source and its location within your repo. This applies if you have worked with a peer on an assignment, used code in which you did not author or create sourced from a forum such as Stack Overflow, or you received code outside curriculum content from support staff such as an Instructor, TA, Tutor, or Learning Assistant. This will provide visibility to grading staff of your circumstance in order to avoid flagging your work as plagiarized.
 
 If you are struggling with a Challenge or any aspect of the curriculum, please remember that there are student support services available for you:
@@ -248,5 +248,5 @@ Ask the class Slack channel/get peer support
 
 AskBCS Learning Assistants
 
-References
+## References
 Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012: An overview of the Global Historical Climatology Network-Daily Database. Journal of Atmospheric and Oceanic Technology, 29, 897-910, https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml
