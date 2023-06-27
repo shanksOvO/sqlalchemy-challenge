@@ -113,8 +113,8 @@ Join the station and measurement tables for some of the queries.
 
 Use the Flask jsonify function to convert your API data to a valid JSON response object.
 
-###\ Requirements
-Jupyter Notebook Database Connection (10 points)
+## Requirements
+### Jupyter Notebook Database Connection (10 points)
 To receive all points, you must
 Use the SQLAlchemy create_engine() function to connect to your SQLite database (1 point)
 
@@ -126,7 +126,7 @@ Link Python to the database by creating a SQLAlchemy session (1 point)
 
 Close your session at the end of your notebook (1 point)
 
-Precipitation Analysis (16 points)
+### Precipitation Analysis (16 points)
 To receive all points, you must
 Create a query that finds the most recent date in the dataset (8/23/2017) (2 points)
 
@@ -140,7 +140,7 @@ Plot the results by using the DataFrame plot method with date as the x and preci
 
 Use Pandas to print the summary statistics for the precipitation data (2 points)
 
-Station Analysis (16 points)
+### Station Analysis (16 points)
 To receive all points, you must
 Design a query that correctly finds the number of stations in the dataset (9) (2 points)
 
@@ -154,7 +154,7 @@ Save the query results to a Pandas DataFrame (2 points)
 
 Correctly plot a histogram with bins=12 for the last year of data using tobs as the column to count. (4 points)
 
-API SQLite Connection & Landing Page (10 points)
+### API SQLite Connection & Landing Page (10 points)
 To receive all points, your Flask application must
 Correctly generate the engine to the correct sqlite file (2 points)
 
@@ -166,7 +166,7 @@ Correctly create and binds the session between the python app and database (2 po
 
 Display the available routes on the landing page (2 points)
 
-API Static Routes (15 points)
+### API Static Routes (15 points)
 To receive all points, your Flask application must include
 A precipitation route that:
 
@@ -183,7 +183,7 @@ Returns jsonified data for the most active station (USC00519281) (3 points)
 
 Only returns the jsonified data for the last year of data (3 points)
 
-API Dynamic Route (15 points)
+### API Dynamic Route (15 points)
 To receive all points, your Flask application must include
 A start route that:
 
@@ -197,7 +197,7 @@ Accepts the start and end dates as parameters from the URL (3 points)
 
 Returns the min, max, and average temperatures calculated from the given start date to the given end date (6 points)
 
-Coding Conventions and Formatting (8 points)
+### Coding Conventions and Formatting (8 points)
 To receive all points, your code must
 Place imports at the top of the file, just after any module comments and docstrings, and before module globals and constants. (2 points)
 
@@ -207,7 +207,7 @@ Follow DRY (Don't Repeat Yourself) principles, creating maintainable and reusabl
 
 Use concise logic and creative engineering where possible. (2 points)
 
-Deployment and Submission (6 points)
+### Deployment and Submission (6 points)
 To receive all points, you must
 Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (2 points)
 
@@ -215,13 +215,13 @@ Use the command line to add your files to the repository. (2 points)
 
 Include appropriate commit messages in your files. (2 points)
 
-Comments (4 points)
+### Comments (4 points)
 To receive all points, your code must
 Be well commented with concise, relevant notes that other developers can understand. (4 points)
-Grading
+##Grading
 This assignment will be evaluated against the requirements and assigned a grade according to the following table:
 
-## Grade	Points
+### Grade	Points
 A (+/-)	90+
 B (+/-)	80–89
 C (+/-)	70–79
